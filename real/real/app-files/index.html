@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sti</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+  <div class="header">
+    <div class="logo">
+        <img src="img/Systems_Technology_Institute-removebg-preview.png" alt="STI Logo">
+        <p id="header-name">COLLEGE MALOLOS</p>
+
+        <span id="overlay-btn" onclick="openNav()">&#9776;</span>
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+          <div class="overlay-content">
+            <div class="floor-section">
+              <h3>Entrance</h3>
+              <a href="javascript:void(0)" class="scene" data-id="0-sti-entrance">
+                <li class="text">STI Entrance Front Door</li>
+              </a>
+            
+            </div>
+    
+            <div class="floor-section">
+              <h3>1st Floor</h3>
+              
+              <a href="javascript:void(0)" class="scene" data-id="5-lobby">
+                <li class="text">1st Floor Lobby</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="6-1st-floor-hallway-computer">
+                <li class="text">1st Floor Hallway Computer</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="7-1st-floor-office-hallway">
+                <li class="text">1st Floor Office Hallway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="8-1st-floor-comlab-1">
+                <li class="text">1st Floor Comlab 1</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="9-1st-floor-comlab-2">
+                <li class="text">1st Floor Comlab 2</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="10-1st-floor-bathroom">
+                <li class="text">1st Floor Bathroom</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="11-1st-floor-elevator-hallway">
+                <li class="text">1st Floor Elevator Hallway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="12-1st-floor-to-2nd-floor">
+                <li class="text">1st Floor to 2nd Floor</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="13-1st-floor-kitchen">
+                <li class="text">1st Floor Kitchen</li>
+              </a>
+            </div>
+      
+      
+            <div class="floor-section">
+              <h3>2nd Floor</h3>
+              <a href="javascript:void(0)" class="scene" data-id="14-2nd-floor-stairs-hallway">
+                <li class="text">2nd Floor Stairs Hallway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="15-2nd-floor-hallway-middle">
+                <li class="text">2nd Floor Hallway Middle</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="16-2nd-floor-3-way">
+                <li class="text">2nd Floor 3 Way</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="17-2nd-floor-faculty-">
+                <li class="text">2nd Floor Faculty </li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="18-2nd-floor-bathroom">
+                <li class="text">2nd Floor Bathroom</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="19-2nd-floor-library">
+                <li class="text">2nd Floor Library</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="20-2nd-floor-avr">
+                <li class="text">2nd Floor AVR</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="21-2nd-floor-to-3rd-floor">
+                <li class="text">2nd Floor to 3rd Floor</li>
+              </a>
+            </div>
+      
+    
+            <div class="floor-section">
+              <h3>3rd Floor</h3>
+              
+              <a href="javascript:void(0)" class="scene" data-id="22-3rd-floor-hallway">
+                <li class="text">3rd Floor Hallway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="23-3rd-floor-stairs-hallway">
+                <li class="text">3rd Floor Stairs Hallway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="24-3rd-floor-window-hallway">
+                <li class="text">3rd Floor Window Hallway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="25-3rd-floor-3-way">
+                <li class="text">3rd Floor 3 Way</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="26-3rd-floor-bathroom">
+                <li class="text">3rd Floor Bathroom</li>
+              </a>
+            
+            </div>
+    
+    
+            <div class="floor-section">
+              <h3>4rd Floor</h3>
+              <a href="javascript:void(0)" class="scene" data-id="27-4th-stairway">
+                <li class="text">4th stairway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="28-4th-floor-elevator-hallway">
+                <li class="text">4th Floor Elevator Hallway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="29-4th-floor-office">
+                <li class="text">4th Floor Office</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="30-4th-floor-3-way-hallway">
+                <li class="text">4th Floor 3 Way Hallway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="31-4th-floor-window-hallway">
+                <li class="text">4th Floor Window Hallway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="32-4th-floor-lab-2">
+                <li class="text">4th Floor Lab 2</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="33-4th-floor-lab-1">
+                <li class="text">4th Floor Lab 1</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="34-4th-floor-speech-lab">
+                <li class="text">4th Floor Speech Lab</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="35-4th-floor-comlab-3">
+                <li class="text">4th Floor Comlab 3</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="36-4th-floor-bathroom-hallway">
+                <li class="text">4th Floor Bathroom Hallway</li>
+              </a>
+            </div>
+    
+    
+    
+            <div class="floor-section">
+              <h3>5nd Floor</h3>
+              <a href="javascript:void(0)" class="scene" data-id="37-5th-floor-bleachers">
+                <li class="text">5th Floor Bleachers</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="38-5th-floor-gym">
+                <li class="text">5th Floor Gym</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="39-5th-floor-faculty">
+                <li class="text">5th Floor Faculty</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="40-5th-floor-gym-entrance">
+                <li class="text">5th Floor Gym Entrance</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="41-5th-stairway_">
+                <li class="text">5th Stairway</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="42-easteregg">
+                <li class="text"></li>
+              </a>
+    
+            </div>
+           
+            
+            <div class="floor-section">
+              <h3>Basement</h3>
+              <a href="javascript:void(0)" class="scene" data-id="1-basement-1">
+                <li class="text">Basement 1</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="2-basement-canteen">
+                <li class="text">Basement Canteen</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="3-basement-2">
+                <li class="text">Basement 2</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="4-basement-uniform">
+                <li class="text">Basement Uniform</li>
+              </a>
+            </div>
+    
+            </div>
+          </div>
+        </div>
+        
+        <script>
+    
+          function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+          }
+    
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+    
+        </script>
+    
+        </div>
+    </div>
+    </div>
+  </div>
+
+<div id="pano"></div>
+
+
+<div id="sceneList">
+  <ul class="scenes">
+
+  </ul>
+
+
+
+  <ul class="scenes" data-floor="E">
+    <h3 class="floor-title">Entrance</h3>
+
+    <a href="javascript:void(0)" class="scene" data-id="0-sti-entrance">
+      <li class="text">STI Entrance</li>
+    </a>
+
+      </a>
+    </ul>
+
+  <ul class="scenes" data-floor="1">
+    <h3 class="floor-title">1st Floor</h3>
+
+    <a href="javascript:void(0)" class="scene" data-id="5-lobby">
+      <li class="text">Lobby</li>
+    </a>
+  
+    <a href="javascript:void(0)" class="scene" data-id="6-1st-floor-hallway-computer">
+      <li class="text">1st Floor Hallway Computer</li>
+    </a>
+  
+    <a href="javascript:void(0)" class="scene" data-id="7-1st-floor-office-hallway">
+      <li class="text">1st Floor Office Hallway</li>
+    </a>
+  
+    <a href="javascript:void(0)" class="scene" data-id="8-1st-floor-comlab-1">
+      <li class="text">1st Floor Comlab 1</li>
+    </a>
+  
+    <a href="javascript:void(0)" class="scene" data-id="9-1st-floor-comlab-2">
+      <li class="text">1st Floor Comlab 2</li>
+    </a>
+  
+    <a href="javascript:void(0)" class="scene" data-id="10-1st-floor-bathroom">
+      <li class="text">1st Floor Bathroom</li>
+    </a>
+  
+    <a href="javascript:void(0)" class="scene" data-id="11-1st-floor-elevator-hallway">
+      <li class="text">1st Floor Elevator Hallway</li>
+    </a>
+  
+    <a href="javascript:void(0)" class="scene" data-id="12-1st-floor-to-2nd-floor">
+      <li class="text">1st Floor to 2nd Floor</li>
+    </a>
+  
+    <a href="javascript:void(0)" class="scene" data-id="13-1st-floor-kitchen">
+      <li class="text">1st Floor Kitchen</li>
+    </a>
+  
+
+    </ul>
+    <ul class="scenes" data-floor="2">
+      <h3 class="floor-title">2nd Floor</h3>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-2nd-floor-stairs-hallway">
+        <li class="text">2nd Floor Stairs Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-2nd-floor-hallway-middle">
+        <li class="text">2nd Floor Hallway Middle</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-2nd-floor-3-way">
+        <li class="text">2nd Floor 3 Way</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-2nd-floor-faculty-">
+        <li class="text">2nd Floor Faculty </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-2nd-floor-bathroom">
+        <li class="text">2nd Floor Bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-2nd-floor-library">
+        <li class="text">2nd Floor Library</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-2nd-floor-avr">
+        <li class="text">2nd Floor AVR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-2nd-floor-to-3rd-floor">
+        <li class="text">2nd Floor to 3rd Floor</li>
+      </a>
+
+    </ul>
+    <ul class="scenes" data-floor="3">
+      <h3 class="floor-title">3rd Floor</h3>
+
+      <a href="javascript:void(0)" class="scene" data-id="22-3rd-floor-hallway">
+        <li class="text">3rd Floor Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-3rd-floor-stairs-hallway">
+        <li class="text">3rd Floor Stairs Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-3rd-floor-window-hallway">
+        <li class="text">3rd Floor Window Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-3rd-floor-3-way">
+        <li class="text">3rd Floor 3 Way</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-3rd-floor-bathroom">
+        <li class="text">3rd Floor Bathroom</li>
+      </a>
+    
+    </ul>
+    
+    <ul class="scenes" data-floor="4">
+      <h3 class="floor-title">4th Floor</h3>
+    
+       <a href="javascript:void(0)" class="scene" data-id="27-4th-stairway">
+        <li class="text">4th stairway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-4th-floor-elevator-hallway">
+        <li class="text">4th Floor Elevator Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-4th-floor-office">
+        <li class="text">4th Floor Office</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-4th-floor-3-way-hallway">
+        <li class="text">4th Floor 3 Way Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-4th-floor-window-hallway">
+        <li class="text">4th Floor Window Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-4th-floor-lab-2">
+        <li class="text">4th Floor Lab 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-4th-floor-lab-1">
+        <li class="text">4th Floor Lab 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-4th-floor-speech-lab">
+        <li class="text">4th Floor Speech Lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-4th-floor-comlab-3">
+        <li class="text">4th Floor Comlab 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-4th-floor-bathroom-hallway">
+        <li class="text">4th Floor Bathroom Hallway</li>
+      </a>
+    
+    </ul>
+    <ul class="scenes" data-floor="5">
+      <h3 class="floor-title">5th Floor</h3>
+
+      <a href="javascript:void(0)" class="scene" data-id="37-5th-floor-bleachers">
+        <li class="text">5th Floor Bleachers</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-5th-floor-gym">
+        <li class="text">5th Floor Gym</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-5th-floor-faculty">
+        <li class="text">5th Floor Faculty</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-5th-floor-gym-entrance">
+        <li class="text">5th Floor Gym Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-5th-stairway_">
+        <li class="text">5th stairway_</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-easteregg">
+        <li class="text"></li>
+      </a>
+      
+    </ul>
+
+      <ul class="scenes" data-floor="B">
+        <h3 class="floor-title">Basement</h3>
+      
+        <a href="javascript:void(0)" class="scene" data-id="1-basement-1">
+          <li class="text">Basement 1</li>
+        </a>
+      
+        <a href="javascript:void(0)" class="scene" data-id="2-basement-canteen">
+          <li class="text">Basement Canteen</li>
+        </a>
+      
+        <a href="javascript:void(0)" class="scene" data-id="3-basement-2">
+          <li class="text">Basement 2</li>
+        </a>
+      
+        <a href="javascript:void(0)" class="scene" data-id="4-basement-uniform">
+          <li class="text">Basement Uniform</li>
+        </a>
+      </ul>
+
+</div>
+
+
+
+
+
+  <div id="infobox">
+    <div id="infobox-content">
+      <h2 id="infobox-title">Floor Information</h2>
+      <p id="infobox-text">Welcome to STI College Malolos! Select a floor to see more information.</p>
+      <audio id="infobox-audio" controls>
+        <source src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+
+
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
